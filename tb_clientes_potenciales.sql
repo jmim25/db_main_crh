@@ -22,6 +22,7 @@ create table tb_clientes_potenciales
     descripcion_estatus varchar(100) null comment 'comentarios sobre la conversion o cierre del cliente',
     id_campania int null comment 'campaña con la que se alcanzo este cliente',
     convertido  tinyint(1) default 0 null comment 'bandera si ya fue usado para rellenar los datos de un cliente cerrado por eso se llama convertido, convertido a un cliente',
-    website text null comment 'sitio o pagina web del cliente'
+    website text null comment 'sitio o pagina web del cliente',
+    zona varchar(100) null comment 'zona a la que pertenece el cliente potencial'
 )
     engine = InnoDB;
