@@ -4,6 +4,6 @@ CREATE TABLE `tb_tipos_resultado_estudios` (
   `descripcion` text NULL COMMENT 'Describir su uso',
   `activo` tinyint(1) DEFAULT '1' COMMENT 'bandera para sober si esta o no activo',
   `fecha_auto` datetime DEFAULT NULL COMMENT 'fecha y hora de creacion',
-  `fecha_update` datetime DEFAULT NULL COMMENT 'fecha y hora en la que se realizo el ultimo cambio'
-  PRIMARY KEY (`id`),
+  `fecha_update` datetime DEFAULT NULL COMMENT 'fecha y hora en la que se realizo el ultimo cambio',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='datos para que los clientes tengan acceso al portal en la version ci4';
